@@ -39,8 +39,14 @@ public class Estoque implements IEstoque {
         return null;
     }
 
-    // ✅ Método extra para GUI pegar todos os produtos
+    // Retorna a lista completa para uso na interface gráfica
     public List<Produto> buscarTodos() {
         return produtos;
+    }
+
+    // Remove um produto do estoque
+    public void removerProduto(Produto produto) {
+        produtos.remove(produto);
+        System.out.println("Produto " + produto.getNome() + " removido do estoque!");
     }
 }

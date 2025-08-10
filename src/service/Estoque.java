@@ -38,4 +38,9 @@ public class Estoque implements IEstoque {
         }
         return null;
     }
+
+    // ✅ Método extra para GUI pegar todos os produtos
+    public List<Produto> buscarTodos() {
+        return produtos;
+    }
 }
